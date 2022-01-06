@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> 
+<html>
+    <head></head>
+    <body>
+        <h1>frame의 시대</h1>
+        <p>Frame이라는 태그로 레이아웃을 잡던 시대</p>
+        <p>장점 : 상단은 고정 하단만 페이지가 리로드 되는 마치 ajax로 구현된 사이트같은 느낌을 줄수있었다 (ajax라는 용어는 당시에는 없었음, 오히려 단점이 되기도)</p>
+        <p>특징&단점</p>
+        <ol>
+            <li>이쁘게 꾸미기가 힘들었다. 그래도 편법은 있었다.</li>
+            <li>테이블속의 테이블, 그 테이블의 속의 테이블.. 그 속의테이블 속의 테이블... 무한반복</li>
+            <li>이유는 테이블안에 데이터가 들어갈경우 너비 조절이 마음대로 되지 않았기 때문에 셀안에 테이블을 다시 넣어줌으로써 셀의 영역이 자동늘어나는것을 방지하기 위함이었다.</li>
+            <li>의미 없는 태그 (원래 테이블의 용도는 데이터를 보여주기위한 용도(엑셀처럼)</li>
+            <li>CSS로 분리되기 이전이라서 html 태그에서 style속성이아닌 width, border 등의 속성값이 난무했다.</li>
+        </ol>        
+        <frameset cols="33%,*,33%">
+            <frame name="left" src="frame/left.html"></frame>
+            <frame name="center" src="frame/center.html"></frame>
+            <frame name="right" src="frame/right.html"></frame>
+        </frameset>
+    </body>
+</html>
